@@ -17,3 +17,9 @@
 100%{transform:translateX(-50%)}
 }
 ul li button.btn.btn-link.tab-link.active{color:#ff4a17!important}
+.map-container{position:relative;width:100%;height:100%}
+.map-container img{width:100%;height:100%;object-fit:cover}
+.marker{position:absolute;cursor:pointer;transform:translate(-50%,-100%)}
+.tooltip{position:absolute;padding:5px 10px;background-color:#000;color:#fff;border-radius:5px;font-size:12px;white-space:nowrap;visibility:hidden;opacity:0;transform:translate(0,-50%);left:100%;margin-left:1px;transition:opacity .3s,visibility .3s}
+.marker:hover .tooltip{visibility:visible;opacity:1}
+img.icon-pin{width:30px;height:30px}

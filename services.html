@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="assets/css/plugins/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-extended.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.28.1/tabler-icons.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.28.1/tabler-icons.css"
         integrity="sha512-ajd9zsyCrz3+h86mdVIhTv/D+PeUk3mgwfzXsiyYuld/Y3zEc99yMS8Zpv9jjx8AilEgueQn+L3/KT/Woknwgw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 
 <body>
@@ -43,6 +43,7 @@
                         <ul class="cs-nav_list">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="services.html">Services</a></li>
+                            <li><a href="support.html">Support</a></li>
                             <!-- <li class="menu-item-has-children"><a href="service.html">About</a>
                               <ul>
                                 <li><a href="service.html">Company</a></li>
@@ -261,9 +262,6 @@
                     <div class="cs-partner_logo">
                         <img src="assets/img/SVG/dropbox.svg" width="270" alt="Partner">
                     </div>
-                </div>
-                <!-- Duplicate content for seamless scroll -->
-                <div class="cs-partner_logo_wrap">
                     <div class="cs-partner_logo">
                         <img src="assets/img/SVG/sharepoint.svg" width="250" alt="Partner">
                     </div>
@@ -1199,21 +1197,22 @@
                             <div class="d-flex gap-2">
                                 <div class="input-group-prepend">
                                     <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                        onclick="decrementMonth(2)">
+                                        onclick="decrementCounter('twoRenderingCounter')">
                                         <i class="ti ti-minus"></i>
                                     </button>
                                 </div>
-                                <span id="quantityMonth-2" type="text" class="form-control quantity-input"
-                                    style="width: 100px;">1
-                                    Month</span>
+                                <input id="twoRenderingCounter"
+                                    class="form-control bg-dark text-white text-center mx-2 rounded-pill" type="text"
+                                    value="0" readonly style="width: 60px;">
                                 <div class="input-group-append">
                                     <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                        onclick="incrementMonth(2)">
+                                        onclick="incrementCounter('twoRenderingCounter')">
                                         <i class="far fa-plus"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="col-lg-6 col-sm-6">
                         <div class="cs-hobble">
@@ -1232,16 +1231,16 @@
                             <div class="d-flex gap-2">
                                 <div class="input-group-prepend">
                                     <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                        onclick="decrementMonth(2)">
+                                        onclick="decrementCounter('fourRenderingCounter')">
                                         <i class="ti ti-minus"></i>
                                     </button>
                                 </div>
-                                <span id="quantityMonth-2" type="text" class="form-control quantity-input"
-                                    style="width: 100px;">1
-                                    Month</span>
+                                <input id="fourRenderingCounter"
+                                    class="form-control bg-dark text-white text-center mx-2 rounded-pill" type="text"
+                                    value="0" readonly style="width: 60px;">
                                 <div class="input-group-append">
                                     <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                        onclick="incrementMonth(2)">
+                                        onclick="incrementCounter('fourRenderingCounter')">
                                         <i class="far fa-plus"></i>
                                     </button>
                                 </div>
@@ -1270,16 +1269,16 @@
                             <div class="d-flex gap-2">
                                 <div class="input-group-prepend">
                                     <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                        onclick="decrementMonth(2)">
+                                        onclick="decrementCounter('simpleModelingCounter')">
                                         <i class="ti ti-minus"></i>
                                     </button>
                                 </div>
-                                <span id="quantityMonth-2" type="text" class="form-control quantity-input"
-                                    style="width: 100px;">1
-                                    Month</span>
+                                <input id="simpleModelingCounter"
+                                    class="form-control bg-dark text-white text-center mx-2 rounded-pill" type="text"
+                                    value="0" readonly style="width: 60px;">
                                 <div class="input-group-append">
                                     <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                        onclick="incrementMonth(2)">
+                                        onclick="incrementCounter('simpleModelingCounter')">
                                         <i class="far fa-plus"></i>
                                     </button>
                                 </div>
@@ -1303,16 +1302,16 @@
                             <div class="d-flex gap-2">
                                 <div class="input-group-prepend">
                                     <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                        onclick="decrementMonth(2)">
+                                        onclick="decrementCounter('complexModelingCounter')">
                                         <i class="ti ti-minus"></i>
                                     </button>
                                 </div>
-                                <span id="quantityMonth-2" type="text" class="form-control quantity-input"
-                                    style="width: 100px;">1
-                                    Month</span>
+                                <input id="complexModelingCounter"
+                                    class="form-control bg-dark text-white text-center mx-2 rounded-pill" type="text"
+                                    value="0" readonly style="width: 60px;">
                                 <div class="input-group-append">
                                     <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                        onclick="incrementMonth(2)">
+                                        onclick="incrementCounter('complexModelingCounter')">
                                         <i class="far fa-plus"></i>
                                     </button>
                                 </div>
@@ -1342,15 +1341,16 @@
                                 <div class="d-flex gap-2">
                                     <div class="input-group-prepend">
                                         <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                            onclick="decrementMonth(2)">
+                                            onclick="decrementCounter('silhoutteImagesCounter')">
                                             <i class="ti ti-minus"></i>
                                         </button>
                                     </div>
-                                    <span id="quantityMonth-2" type="text" class="form-control quantity-input"
-                                        style="width: 50px;">1</span>
+                                    <input id="silhoutteImagesCounter"
+                                        class="form-control bg-dark text-white text-center mx-2 rounded-pill"
+                                        type="text" value="0" readonly style="width: 60px;">
                                     <div class="input-group-append">
                                         <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                            onclick="incrementMonth(2)">
+                                            onclick="incrementCounter('silhoutteImagesCounter')">
                                             <i class="far fa-plus"></i>
                                         </button>
                                     </div>
@@ -1369,15 +1369,16 @@
                                 <div class="d-flex gap-2">
                                     <div class="input-group-prepend">
                                         <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                            onclick="decrementMonth(2)">
+                                            onclick="decrementCounter('highResImagesCounter')">
                                             <i class="ti ti-minus"></i>
                                         </button>
                                     </div>
-                                    <span id="quantityMonth-2" type="text" class="form-control quantity-input"
-                                        style="width: 50px;">1</span>
+                                    <input id="highResImagesCounter"
+                                        class="form-control bg-dark text-white text-center mx-2 rounded-pill"
+                                        type="text" value="0" readonly style="width: 60px;">
                                     <div class="input-group-append">
                                         <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                            onclick="incrementMonth(2)">
+                                            onclick="incrementCounter('highResImagesCounter')">
                                             <i class="far fa-plus"></i>
                                         </button>
                                     </div>
@@ -1395,15 +1396,16 @@
                                 <div class="d-flex gap-2">
                                     <div class="input-group-prepend">
                                         <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                            onclick="decrementMonth(2)">
+                                            onclick="decrementCounter('_360Counter')">
                                             <i class="ti ti-minus"></i>
                                         </button>
                                     </div>
-                                    <span id="quantityMonth-2" type="text" class="form-control quantity-input"
-                                        style="width: 50px;">1</span>
+                                    <input id="_360Counter"
+                                        class="form-control bg-dark text-white text-center mx-2 rounded-pill"
+                                        type="text" value="0" readonly style="width: 60px;">
                                     <div class="input-group-append">
                                         <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                            onclick="incrementMonth(2)">
+                                            onclick="incrementCounter('_360Counter')">
                                             <i class="far fa-plus"></i>
                                         </button>
                                     </div>
@@ -1421,15 +1423,16 @@
                                 <div class="d-flex gap-2">
                                     <div class="input-group-prepend">
                                         <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                            onclick="decrementMonth(2)">
+                                            onclick="decrementCounter('animationCounter')">
                                             <i class="ti ti-minus"></i>
                                         </button>
                                     </div>
-                                    <span id="quantityMonth-2" type="text" class="form-control quantity-input"
-                                        style="width: 50px;">1</span>
+                                    <input id="animationCounter"
+                                        class="form-control bg-dark text-white text-center mx-2 rounded-pill"
+                                        type="text" value="0" readonly style="width: 60px;">
                                     <div class="input-group-append">
                                         <button class="cs-btn cs-style1 bg-white text-dark" type="button"
-                                            onclick="incrementMonth(2)">
+                                            onclick="incrementCounter('animationCounter')">
                                             <i class="far fa-plus"></i>
                                         </button>
                                     </div>
@@ -1438,21 +1441,21 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col-xl-3 mt-5">
+                <div class="col-xl-4 mt-5">
                     <div class="row">
                         <div class="col-xl-12 col-6">
-                            <h1 class="text-white display-3 text-center fw-light m-0">$0</h1>
+                            <h1 class="text-white display-3 text-center fw-light m-0" id="totalPrice">$0</h1>
                             <p class="text-white text-center">Estimate Price</p>
                         </div>
                         <div class="col-xl-12 col-6">
                             <div class="text-white text-center fw-light m-0">
-                                <h1 class="display-2 m-0 d-inline">0</h1><span class="fs-4"> days</span>
+                                <h1 class="display-2 m-0 d-inline" id="totalDay">0</h1><span class="fs-4"> days</span>
                             </div>
                             <p class="text-white text-center">Estimate Times</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 mt-5">
+                <div class="col-xl-4 mt-5">
                     <p class="text-white">* The calculator is meant to demonstrate the indicative
                         cost. To get an accurate quote, fill in the form, contact our
                         client manager via online chat or email and we will
@@ -2033,6 +2036,84 @@
                 const tabId = button.getAttribute('data-tab');
                 document.getElementById(tabId).classList.add('active');
             });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Harga masing-masing opsi dan estimasi waktu per unit
+            const prices = {
+                twoRendering: { price: 10, days: 1 },
+                fourRendering: { price: 15, days: 1 },
+                simpleModeling: { price: 20, days: 1 },
+                complexModeling: { price: 65, days: 1 },
+                silhoutteImages: { price: 5, days: 1 },
+                highResImages: { price: 10, days: 1 },
+                _360: { price: 25, days: 1 },
+                animation: { price: 45, days: 3 }  // 3 days per 3 seconds of animation
+            };
+
+            // Fungsi untuk menghitung total dan estimasi hari
+            function calculateTotal() {
+                let total = 0;
+                let totalDays = 0;
+
+                // Ambil nilai counter dan tambahkan ke total dan total hari
+                total += parseInt(document.getElementById("simpleModelingCounter").value) * prices.simpleModeling.price;
+                totalDays += parseInt(document.getElementById("simpleModelingCounter").value) * prices.simpleModeling.days;
+
+                total += parseInt(document.getElementById("complexModelingCounter").value) * prices.complexModeling.price;
+                totalDays += parseInt(document.getElementById("complexModelingCounter").value) * prices.complexModeling.days;
+
+                total += parseInt(document.getElementById("twoRenderingCounter").value) * prices.twoRendering.price;
+                totalDays += parseInt(document.getElementById("twoRenderingCounter").value) * prices.twoRendering.days;
+
+                total += parseInt(document.getElementById("fourRenderingCounter").value) * prices.fourRendering.price;
+                totalDays += parseInt(document.getElementById("fourRenderingCounter").value) * prices.fourRendering.days;
+
+                total += parseInt(document.getElementById("silhoutteImagesCounter").value) * prices.silhoutteImages.price;
+                totalDays += parseInt(document.getElementById("silhoutteImagesCounter").value) * prices.silhoutteImages.days;
+
+                total += parseInt(document.getElementById("highResImagesCounter").value) * prices.highResImages.price;
+                totalDays += parseInt(document.getElementById("highResImagesCounter").value) * prices.highResImages.days;
+
+                total += parseInt(document.getElementById("_360Counter").value) * prices._360.price;
+                totalDays += parseInt(document.getElementById("_360Counter").value) * prices._360.days;
+
+                total += parseInt(document.getElementById("animationCounter").value) * prices.animation.price;
+                totalDays += parseInt(document.getElementById("animationCounter").value) * prices.animation.days;
+
+                // Update tampilan total dan total hari
+                const totalPriceElement = document.getElementById("totalPrice");
+                const totalDayElement = document.getElementById("totalDay");
+
+                if (totalPriceElement && totalDayElement) {
+                    totalPriceElement.textContent = `$${total}`;
+                    totalDayElement.textContent = `${totalDays}`;
+                } else {
+                    console.error("Element with IDs 'totalPrice' or 'totalDay' not found.");
+                }
+            }
+
+            // Fungsi increment & decrement untuk setiap item
+            function incrementCounter(counterId) {
+                const counter = document.getElementById(counterId);
+                if (counter) {
+                    counter.value = parseInt(counter.value) + 1;
+                    calculateTotal();
+                }
+            }
+
+            function decrementCounter(counterId) {
+                const counter = document.getElementById(counterId);
+                if (counter && parseInt(counter.value) > 0) {
+                    counter.value = parseInt(counter.value) - 1;
+                    calculateTotal();
+                }
+            }
+
+            // Assign fungsi ke global scope untuk digunakan di onclick
+            window.incrementCounter = incrementCounter;
+            window.decrementCounter = decrementCounter;
         });
     </script>
 </body>
